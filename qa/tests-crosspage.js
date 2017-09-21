@@ -12,7 +12,7 @@ suite('Межстраничные тесты', function () {
 
 		browser.visit(referrer, function () {
             browser.clickLink(".requestGroupRate", function(e) {
-                console.log(e);
+                // console.log(e);
 	            // browser.assert.input('form input[name="groupSize"]', browser.field('[name="groupSize"]').value, '');
                 // console.log(referrer);
                 // console.log(browser.field('[name="groupSize"]').value == referrer);
@@ -20,7 +20,7 @@ suite('Межстраничные тесты', function () {
                 assert(browser.field('[name="groupSize"]').value === "152");
                 done();
             });
-		})
+		});
 	});
 	test('переход со страницы "Орегон Коуст"', function (done) {
 		var referrer = 'http://localhost:7000/tours/oregon-coast';
@@ -28,14 +28,14 @@ suite('Межстраничные тесты', function () {
 		browser.visit(referrer, function () {
 			browser.clickLink(".requestGroupRate", function(e) {
 				done();
-			})
-		})
+			});
+		});
 	});
 	test('посещение страницы "Запрос цены для групп" напрямую должен приводить к пустому полю реферера', function (done) {
 		browser.visit('http://localhost:7000/tours/request-group-rate', function (e) {
 			assert(browser.field('[name="referrer"]').value === "");
 			done();
-		})
+		});
 	});
 });
 

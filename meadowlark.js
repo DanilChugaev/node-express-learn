@@ -47,5 +47,5 @@ app.use(function (err, req, res, next) {
 
 
 app.listen(app.get('port'), function () {
-	console.log('Express запущен на http://localhost:' + app.get('port') + '; Нажмите ctrl+c для завершения')
+	console.log('Express запущен на http://localhost:' + app.get('port') + '; Нажмите ctrl+c для завершения');
 });

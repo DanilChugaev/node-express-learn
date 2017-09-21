@@ -21,7 +21,17 @@
     "express-handlebars": "^3.0.0"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
     "chai": "^4.1.2",
+    "check-pages": "^0.10.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-mocha": "^4.3.1",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^2.2.1",
     "mocha": "^3.5.3",
     "zombie": "^5.0.7"
   }
