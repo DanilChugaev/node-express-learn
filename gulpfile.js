@@ -10,8 +10,8 @@ let mochaSrc = [
 	],
 	jshintSrc = [
 		'public/js/**/*.js',
-		'lib/**/*.js',
 		'public/qa/**/*.js',
+		'lib/**/*.js',
 		'qa/**/*.js'
 	],
 	linkCheckOptions = {
