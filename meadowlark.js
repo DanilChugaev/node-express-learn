@@ -88,6 +88,25 @@ app.get('/tours/request-group-rate', function (req,res) {
 app.get('/tours/oregon-coast', function (req,res) {
 	res.render('tours/oregon-coast');
 });
+
+app.get('/nursery-rhyme', function (req,res) {
+	res.render('nursery-rhyme');
+});
+app.get('/data/nursery-rhyme', function (req,res) {
+	res.json({
+        animal: 'belchonok',
+        bodyPart: 'hvost',
+        adjective: 'pushistii',
+        noun: 'chert'
+    });
+});
+
+
+
+
+
+
+
 app.use(function (req,res) {
 	res.status(404);
     res.render('404');
